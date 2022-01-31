@@ -25,8 +25,7 @@ def home_view(request):
 
 
 def completed_tasks_view(request):
-    return render(request, "completedTasks.html", {
-        "completedTasks": completedTasks})
+    return render(request, "completedTasks.html", {"tasks": tasks, "completedTasks": completedTasks})
 
 
 def all_tasks_view(request):
