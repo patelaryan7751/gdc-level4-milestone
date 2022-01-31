@@ -17,7 +17,7 @@ def completeTask(index):
 
 
 def tasks_view(request):
-    return render(request, "tasks.html", {"tasks": tasks})
+    return render(request, "tasks.html", {"tasks": tasks, "completedTasks": completedTasks})
 
 
 def home_view(request):
